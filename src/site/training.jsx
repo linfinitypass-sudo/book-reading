@@ -381,9 +381,9 @@ function Training() {
                             <button onClick={startTraining} style={{color: '#fff', cursor: 'pointer', backgroundColor: '#FF6B08', border: '0', fontFamily: '"Montserrat", serif', fontWeight: 600, fontSize: '16px', padding: '12px 30px', margin: '40px 0 40px calc(50% - 100px)'}}>Почати тренування</button>
                         )}
                         <div style={{width: '886px', height: '340px', backgroundColor: '#fff', margin: training ? '40px 0 calc(100% - 595px) calc(50% - 443px)': '0 0 calc(100% - 830px) calc(50% - 443px)', boxShadow: '2px 2px 2px #091E3F40'}}>
-                            {training && currentUserPages.length > 0 && (
+                            {training && currentUserPages.length > 0 ? (
                                 <Line data={chartData} options={chartOptions} />
-                            )}
+                            ) : <p style={{fontFamily: '"Montserrat", serif', fontWeight: 500, textAlign: 'center', padding: '161px 0', margin: '0'}}>Недостатьно iнформацiї.</p>}
                         </div>
                     </div>
                 </div>
