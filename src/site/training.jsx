@@ -391,17 +391,17 @@ function Training() {
                     <p style={{fontFamily: '"Montserrat", serif', fontWeight: 600, fontSize: '20px', color: '#fff', backgroundColor: '#B1B5C2', margin: '50px 0 0 41px', padding: '18px 28px'}}>Моя мета прочитати</p>
                     <div style={{fontFamily: '"Montserrat", serif', fontWeight: 500, display: 'flex', backgroundColor: '#fff', margin: '0 0 40px 41px', boxShadow: '2px 2px 2px #091E3F1A'}}>
                         <div>
-                            <p style={{fontFamily: '"Open Sans", serif', textAlign: 'center', fontWeight: 700, fontSize: '45px', color: '#091E3F', margin: '0', width: training ? '66px' : '100px', height: training ? '66px' : '100px', margin: training ? '72px 22px 0 17px' : '55px 20px 14px 28px', backgroundColor: '#F5F7FA', boxShadow: '4px 4px 4px #242A3726'}}>{training ? (reading.length + finishing.length) : selectBook.length}</p>
-                            <p style={{fontSize:'12px',color: '#898F9F', margin: training ? "14px 0 76px 22px" : '14px 20px 55px 45px', width: '66px'}}>Кiлькiсть книжок</p>
+                            <p style={{fontFamily: '"Open Sans", serif', textAlign: 'center', fontSize: '45px', color: '#091E3F', margin: '0', width: training ? '66px' : '100px', fontWeight: 700, paddingTop: training ? '14px' : '18px', height: training ? '52px' : '82px', margin: training ? '72px 22px 0 17px' : '55px 20px 14px 28px', backgroundColor: '#F5F7FA', boxShadow: '4px 4px 4px #242A3726'}}>{training ? (reading.length + finishing.length) : selectBook.length}</p>
+                            <p style={{fontSize:'12px',color: '#898F9F', margin: training ? "14px 0 76px 22px" : '14px 20px 55px 45px', textAlign: 'center', width: '66px'}}>Кiлькiсть книжок</p>
                         </div>
                         <div>
-                            <p style={{fontFamily: '"Open Sans", serif', textAlign: 'center', fontWeight: 700, fontSize: '45px', color: '#091E3F', margin: '0', width: training ? '66px' : '100px', height: training ? '66px' : '100px', margin: training ? '72px 22px 0 0' : '55px 0 14px 0', backgroundColor: '#F5F7FA', boxShadow: '4px 4px 4px #242A3726'}}>{data3}</p>
-                            <p style={{fontSize:'12px',color: '#898F9F', margin: training ? "14px 0 76px 0" : '14px 0 55px 0', width: '66px'}}>Кількість днів</p>
+                            <p style={{fontFamily: '"Open Sans", serif', textAlign: 'center', fontWeight: 700, fontSize: '45px', color: '#091E3F', margin: '0', width: training ? '66px' : '100px', paddingTop: training ? '14px' : '18px', height: training ? '52px' : '82px', margin: training ? '72px 22px 0 0' : '55px 0 14px 0', backgroundColor: '#F5F7FA', boxShadow: '4px 4px 4px #242A3726'}}>{data3}</p>
+                            <p style={{fontSize:'12px',color: '#898F9F', margin: training ? "14px 0 76px 17px" : '14px 0 55px 17px', textAlign: 'center', width: '66px'}}>Кількість днів</p>
                         </div>
                         {training ? (
                             <div>
-                                <p style={{fontFamily: '"Open Sans", serif', textAlign: 'center', fontWeight: 700, fontSize: '45px', color: '#FF6B08', margin: '0', width: '66px', height: '66px', margin: '72px 0 0 0', backgroundColor: '#F5F7FA', boxShadow: '4px 4px 4px #242A3726'}}>{reading.length}</p>
-                                <p style={{fontSize:'12px',color: '#898F9F', margin: "14px 0 76px 0", width: '66px'}}>Залишилось книжок</p>
+                                <p style={{fontFamily: '"Open Sans", serif', textAlign: 'center', fontWeight: 700, fontSize: '45px', color: '#FF6B08', margin: '0', width: '66px', paddingTop: '14px', height: '52px', margin: '72px 0 0 0', backgroundColor: '#F5F7FA', boxShadow: '4px 4px 4px #242A3726'}}>{reading.length}</p>
+                                <p style={{fontSize:'12px',color: '#898F9F', textAlign: 'center', margin: "14px 0 76px 0", width: '66px'}}>Залишилось книжок</p>
                             </div>
                         ) : (
                             <></>
